@@ -18,15 +18,7 @@ Route::get('/', function () {
 });
 //End Home page
 
-//Route to info page
-Route::get('/information/info', function() {
-  return view('/information/info');
-});
 
-//Route to About Us page
-Route::get('/information/aboutus', function() {
-  return view('/information/aboutus');
-});
 Route::get('/rating', function () {
     //return view('landing');
     return view('rating');
