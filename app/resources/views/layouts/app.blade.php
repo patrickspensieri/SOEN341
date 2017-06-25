@@ -51,7 +51,6 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
-                        <li><a href="{{ url('/information/info') }}"> Info</a> </li>
                     </ul>
 
 
@@ -101,9 +100,6 @@
         <!--Footer-->
         <footer>
           <div class="col-md-12">
-            <div class="pull-left">
-              <a href="{{url('/information/aboutus')}}">About Us</a>
-            </div>
             <div class="pull-center">
               <h5>THANKS FOR VISITING!</h5>
             </div>
