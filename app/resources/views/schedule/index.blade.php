@@ -47,8 +47,8 @@
                       <tr>
                         @for ($day = 0; $day < 7; $day++)
                         <td>
-                          <label for="">
-                            <input type="checkbox" name="freetime[]" value="{{$day}}{{$hour}}"
+                          <label for="{{$day}}{{$hour}}">
+                            <input type="checkbox" name="freetime[]" value="{{$day}}{{$hour}}" id="{{$day}}{{$hour}}"
                             @if ($schedule->freetime[($day*24)+$hour] == 1 )
                               checked
                             @endif

@@ -15,11 +15,11 @@
 									@foreach($courses as $course)
 											<label><input name="course" value="{{$course->id}}" type="radio">{{ $course->code }}</label></br>
 									@endforeach
+                                </div>
 									<button class="btn btn-default" type="submit" value="selection">Next</button>
 								@else
 									<p>You need to <a href="/courses/course">enroll</a> in a course to be able to study.</p>
 								@endif
-							</div>
 							@if (count($errors))
 								<div class='form-group'>
 									<div class='alert alert-danger'>

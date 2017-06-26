@@ -6,33 +6,20 @@
         <div class="profile-content">
           	<div class="col-md-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Choose a Meeting Time</div>
+					<div class="panel-heading">Choose a Meeting Time
+                        <div class="pull-right" align="center">
+                        <!-- Form for changing the week -->
+                        <form method="GET" action="/choosetime">
+                        <button type="btn btn-default" name="prevWeek" value="prevWeek" class="btn btn-default btn-sm">Previous Week</button>
+                        <button type="btn btn-default" name="nextWeek" value="nextWeek" class="btn btn-default btn-sm">Next Week</button>
+                        <input type="hidden" name="instructor" value="{{$instructor->id}}">
+                        <input type="hidden" name="weekStart" value="{{$week[0]}}">
+                        <input type="hidden" name="weekEnd" value="{{$week[1]}}">
+                        </form>
+                    </div>
+                    </div>
 					<div class="panel-body">
-
-						<!-- Form for changing the week -->
-						<form id="changeWeek" method="GET" action="/choosetime">
-							{{csrf_field()}}
-							<input type="hidden" name="instructor" value="{{$instructor->id}}">
-							<input type="hidden" name="weekStart" value="{{$week[0]}}">
-							<input type="hidden" name="weekEnd" value="{{$week[1]}}">
-
-							<div class='row'>
-								<div class='col-md-8'>
-									<div class='container' style='margin: 5px;'>
-										{{$instructor->name}}
-									</div>
-								</div>
-								<div class='col-md-4'>
-									<div class='container' style='margin: 5px;'>
-										<button type="btn btn-default" name="prevWeek" value="prevWeek">Previous Week</button>
-										<button type="btn btn-default" name="nextWeek" value="nextWeek">Next Week</button>
-									</div>
-								</div>
-							</div>
-
-
-						</form>
-
+                            <h4>{{$instructor->name}}</h4>
 							<div class="row">
 								<div class="col-md-12">
 									<form id="instructor-times" method="POST" action="/instructorMeeting">
