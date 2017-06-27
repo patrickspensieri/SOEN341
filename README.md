@@ -17,7 +17,7 @@ Create an account or log in as John for a quick tour of Buddy Up.
     Password => password
     
 
-## Interactive Code Analysis Report
+## Interactive Code Analysis
 
 https://n2chao.github.io/SOEN341/
 
