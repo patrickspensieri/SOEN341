@@ -1,15 +1,29 @@
-# SOEN 341
+# SOEN 341 - Software Processes
 
-## Objective
-
-Develop an e-learning program.
 
 ## Project
 
-Studying in groups can have many benefits such as the sharing and discussion of ideas. This web application allows students to easily find and meet peers to study for a specific course. After submitting their schedule, a student can pick the course he or she wants to study and a timeframe. This student is then matched with schoolmates that want study for the chosen course. Finally, the application shows the times during the week where the students can meet according to their schedule and put them in contact.
+Buddy Up is an online application designed to improve Students’ learning process by allowing them to find a study buddy for the same course, or to help them book an appointment with a teacher or teacher’s assistant. Students and instructors “enroll” in a course and enter their current, weekly availabilities. The application then finds all of the possible matches with  respective peers or instructors.
 
-The project also lets professors and teaching assistants submitting their availabilities and offers a way for students to book appointments with them.
+## Demo
 
+http://digitalrain.me
+
+### Quick Start
+
+Create an account or log in as John for a quick tour of Buddy Up.
+
+    E-mail   => john@mail.com
+    Password => password
+    
+
+## Interactive Code Analysis Report
+
+https://n2chao.github.io/SOEN341/
+
+## Burndown Chart
+
+http://radekstepan.com/burnchart/#!/n2chao/SOEN341
 
 ## Team Members
 
@@ -23,10 +37,11 @@ The project also lets professors and teaching assistants submitting their availa
 * Amadou Fall
 
 ## Technologies
-* PHP
 * Laravel
- * Homestead
- * Socialite
-* Bootstrap
 * MySQL
-* Facebook Login
+* Socialite
+* Selectize.js
+* Bootstrap
+* PHPUnit
+* Travis CI
+* PhpMetrics
