@@ -48,6 +48,7 @@
                                 @endfor
                               </tr>
                               <!-- Add availabilities for each matched student-->
+                              <!-- Retrofit results into a responsive table - can be refactored by using Carbon library -->
                               @php
                                 $daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                               @endphp
@@ -65,13 +66,14 @@
                                         @endforeach
                                     </td>
                                     @endfor
+                                    </tr>
                                 @endforeach
-                                </tr>
-                            @else
-                                <p><Label>No student matches</Label></p>
+                                </div>
                             @endif
-                            </div>
                         </table></div>
+                        @if($students->isEmpty())
+                            <h4>No student matches</h4>
+                        @endif
 							<button class="btn btn-default" type="submit" value="selection">Next</button>
 							@if (count($errors))
 								<div class='form-group'>
