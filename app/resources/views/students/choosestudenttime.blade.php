@@ -23,7 +23,8 @@
 							<input type="hidden" name="course_id" value="{{$course->id}}">
                             <input type="hidden" name="currentWeek" value="{{$week[0]}}">
                             {{csrf_field()}}
-                            <table id="dataTable" class="table table-responsive">
+                            <div class="table-responsive">
+                            <table id="dataTable" class="table">
                                 <!-- Create table headers, with dates for current week-->
                                 <tr>
                                     <th>
@@ -70,7 +71,7 @@
                                 <p><Label>No student matches</Label></p>
                             @endif
                             </div>
-                            </table>
+                        </table></div>
 							<button class="btn btn-default" type="submit" value="selection">Next</button>
 							@if (count($errors))
 								<div class='form-group'>

@@ -26,9 +26,10 @@
 										{{csrf_field()}}
 										<input type="hidden" name="currentWeek" value="{{$week[0]}}">
 										<input type="hidden" name="instructor" value="{{$instructor->id}}">
+                                        <div class="table-responsive">
 										<?php
 											date_default_timezone_set("America/New_York");
-											echo "<table class='table .table-bordered'><thread><tr>";
+											echo "<table class='table'><thread><tr>";
 
 												$i = $week[0];
 												if(date("l", $i) != "Sunday"){
@@ -146,6 +147,7 @@
 
 											echo "</td></tr> </tbody></table>";
 										?>
+                                    </div>
 										<button class="btn btn-default" type="submit" name="instructor-names-next">Add to Schedule</button>
 										@if (count($errors))
 											<div class='form-group'>
