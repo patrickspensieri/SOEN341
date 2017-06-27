@@ -6,7 +6,7 @@
       <div class="col-md-12">
         <div class="profile-content">
 				<div class="panel panel-default">
-					<div class="panel-heading">Choose an Instructor to Meet Wtih</div>
+					<div class="panel-heading">Choose an Instructor to Meet With</div>
 					<div class="panel-body">
 
 						<!-- <form id="instructor-names" method="POST" action="/instructorMeeting"> -->
