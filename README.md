@@ -21,6 +21,10 @@ Create an account or log in as John for a quick tour of Buddy Up.
 
 https://n2chao.github.io/SOEN341/
 
+## Continuous Integration
+
+https://travis-ci.org/n2chao/SOEN341
+
 ## Burndown Chart
 
 http://radekstepan.com/burnchart/#!/n2chao/SOEN341
